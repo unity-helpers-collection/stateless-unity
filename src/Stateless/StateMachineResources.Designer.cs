@@ -64,7 +64,7 @@ namespace Stateless {
         /// </summary>
         public static string CannotReconfigureParameters {
             get {
-                return ResourceManager.GetString("CannotReconfigureParameters", resourceCulture);
+                return "Parameters for the trigger '{0}' have already been configured.";
             }
         }
         
@@ -73,7 +73,7 @@ namespace Stateless {
         /// </summary>
         public static string NoTransitionsPermitted {
             get {
-                return ResourceManager.GetString("NoTransitionsPermitted", resourceCulture);
+                return "No valid leaving transitions are permitted from state '{1}' for trigger '{0}'. Consider ignoring the trigger.";
             }
         }
         
@@ -82,7 +82,7 @@ namespace Stateless {
         /// </summary>
         public static string NoTransitionsUnmetGuardConditions {
             get {
-                return ResourceManager.GetString("NoTransitionsUnmetGuardConditions", resourceCulture);
+                return "Trigger '{0}' is valid for transition from state '{1}' but a guard conditions are not met. Guard descriptions: '{2}'.";
             }
         }
     }
